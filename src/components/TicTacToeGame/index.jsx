@@ -30,7 +30,7 @@ export default function TicTacToeGame() {
       });
 
       //Se tirar da erro (não sei porque)
-      let result = await calculateWinner(position);
+      await calculateWinner(position);
 
       if(calculateWinner(position)){
          setWinner(true);
